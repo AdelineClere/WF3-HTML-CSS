@@ -1,0 +1,122 @@
+#container{
+	width:1000px;
+	margin: 50px auto;
+	background:red;
+}
+header{
+	height:100px;
+	display:flex;
+}
+#hautGauche, #hautCentre, #hautDroite{
+	width:33.33%;
+}
+#hautGauche{
+	background:darkblue;
+}
+#hautCentre{
+	background:pink;
+}
+#hautDroite{
+	background:blue;
+}
+nav{
+	background: #9A40A4;
+    height: 30px;
+}
+aside{
+	background: blue;
+    height: 650px;
+    width: 20%;
+    float: left;
+}
+section{
+	float:left;
+	width:80%;
+	background:#F0C000;
+	display:flex;
+}
+.A, .B{
+	background: #32a7a0;
+    height: 250px;
+    width: 50%;
+}
+.B{
+	background:green;
+}
+#slideshow{
+	background:yellow;
+	height:250px;
+}
+.C, .D, .E, .F{
+	height:150px;
+	width:25%;
+}
+.C, .E{
+	background:grey;
+}
+.D,.F{
+	background:purple;
+}
+footer{
+	background:orange;
+	height:40px;
+	clear:both;
+}
+
+/************ RESPONSIVE **********/
+
+/*** Entre 580 et 780px, le container fera 550px ***/
+@media (max-width: 580px){ 
+    p{
+        margin: 0;
+    }
+    body{
+       margin: 0;
+    }
+    #container{
+	   width: 100%;
+	   margin: 0;
+    }
+    
+    #hautCentre{
+        display: none;
+    }
+    #hautGauche, #hautDroite{
+	   width: 50%;
+    }
+    
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside{
+        order:1;
+        width: 100%;
+        height: 50px;
+    }
+    section{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .A, .B{
+        width: 100%;
+        height: 125px;
+    }
+    .C, .D, .E, .F{ /** faut rechanger couls !!**/
+        width: 50%;
+        height: 75px;
+        }
+    .E{
+       background: purple; 
+    }
+    .F{
+       background: gray; 
+    }
+    #slideshow{
+        height: 125px;
+    }
+}
+
+
+
+

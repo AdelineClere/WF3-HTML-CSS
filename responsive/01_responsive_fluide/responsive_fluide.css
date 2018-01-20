@@ -1,0 +1,42 @@
+#container{
+    border: 2px solid;
+    margin: 0 auto;
+    width: 80%
+    max-width: 1200px;  /*** fera 80% de l'ecran jusqu max 1200px ***/
+}
+header{
+    background: #f6523f;
+    height: 15vh;
+}
+p{
+    margin: 0; /*** comme on a pas fait de reset ***/
+}
+nav{
+    background: #665533;
+    height: 5vh;
+}
+section{
+    background: #f23f98;
+    margin: 2%;
+}
+footer{
+    background: #32f65f;
+}
+.a, .b, .c, .d{
+    float: left;
+    width: 50%;
+    height: 28vh;
+    background: #336699;
+}
+.b{
+    background: #767676;
+}
+.c{
+    background: #fda500;
+}
+.d{
+    background: #aa2355;
+}
+.clear{
+    clear:both;
+}

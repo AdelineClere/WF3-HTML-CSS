@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+    
+    <head>
+        <title>Les sélecteurs</title> <!-- Titre de la page -->
+        <meta name="description" content="Les sélecteurs en html/css"> <!-- Description de la page -->
+        <meta charset="UTF-8"> <!-- encodage -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Quicksand" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet"> 
+        <link rel="icon" sizes="32x32" href="img/favicon-32.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css"> <!-- Lien vers mon fichier css -->
+
+    </head>
+    
+    <body>
+        <header id="top">
+            <!-- Zone du haut. Ex : bannière, logo, slogan, mon panier, mon compte etc... -->
+            <div id="logo">
+                <img src="img/css-html.png" alt="Logo css-html"/>
+            </div>           
+			<div id="titreSite"><h1>Mon premier site en html/css</h1></div>
+			<div id="reseaux">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </header>
+        
+        <nav id="Principal">
+            <!-- Zone du menu. Ex : lien pour naviguer sur le site -->
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="texte.html">Texte</a></li>
+                <li class="active"><a href="selecteurs.html">Sélecteurs</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="position.html">Position</a></li>
+                <li><a href="zoning3.html">Zoning</a></li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="liste.html">Liste</a></li>
+                <li><a href="liens_menu.html">Liens & Menu</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+                <li><a href="animations.html">Animations</a></li>
+             </ul>
+        </nav>
+        
+        <main>
+            <!-- Zone principale -->
+            <h2>Les sélecteurs & reset</h2>
+            <section>
+                <h3>Reset CSS</h3>
+                <h1> h1 </h1>
+                <p> p </p>
+                <span> span </span>
+                <div> div </div>
+            </section>
+            <section id="select">
+                <p>texte n°1</p>
+                <p>texte n°2</p>
+                <p>texte n°3</p>
+                <p>texte n°4</p>
+                <p>texte n°5</p>
+                <p>texte n°6</p>
+                <p>texte n°7</p>
+                <p>texte n°8</p>
+                <p>texte n°9</p>
+                <p>texte n°10</p>
+                
+                <div class="zoneA">Zone A</div>
+                <div class="zoneB">Lorem ipsum dolor <span class="couleurBleu"> sit amet,</span>consectetur adipiscing elit.</div>
+                <div id="zoneC"> Zone C </div>
+                <div id="zoneD"> Zone <span>D</span> </div>
+            </section>
+        </main>
+        
+        <button><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
+        
+        <footer>
+            <p>Réalisation site en html-css</p>
+            <!-- Zone du bas. Ex : liens administratifs, ML, plan du site, CGU, CGV, contact, Copyright -->
+        </footer>
+    </body>
+    
+</html>

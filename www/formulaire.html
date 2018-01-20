@@ -1,0 +1,102 @@
+<!Doctype html>
+<html>
+    
+    <head>
+        <title>Les formulaires</title> <!-- Titre de la page -->
+        <link rel="stylesheet" href="css/style.css"> <!-- Lien vers mon fichier css -->
+        <meta name="description" content="Les formulaires en html/css"> <!-- Description de la page -->
+        <meta charset="UTF-8"> <!-- encodage -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Quicksand" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet"> 
+        <link rel="icon" sizes="32x32" href="img/favicon-32.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    
+    <body>
+        <header id="top">
+            <!-- Zone du haut. Ex : bannière, logo, slogan, mon panier, mon compte etc... -->
+            <div id="logo">
+                <img src="img/css-html.png" alt="Logo css-html"/>
+            </div>           
+			<div id="titreSite"><h1>Mon premier site en html/css</h1></div>
+			<div id="reseaux">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </header>
+        
+        <nav id="Principal">
+            <!-- Zone du menu. Ex : lien pour naviguer sur le site -->
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="texte.html">Texte</a></li>
+                <li><a href="selecteurs.html">Sélecteurs</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="position.html">Position</a></li>
+                <li><a href="zoning3.html">Zoning</a></li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="liste.html">Liste</a></li>
+                <li><a href="liens_menu.html">Liens & Menu</a></li>
+                <li class="active"><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+                <li><a href="animations.html">Animations</a></li>
+             </ul>
+        </nav>
+        
+        <main>
+            <H2>Les formulaires</H2>
+            <section class="formulaire">
+                <form>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" name="pseudo" required placeholder="Prénom">
+                
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" id="mdp" name="mdp">
+                    
+                    <label for="cv">CV</label>
+                    <input type="file" id="cv" name="cv" multiple>
+                     
+                    <label for="choix">Equipe de rugdy</label>
+                    <p> <!-- pas oblig -->
+                        <input type="checkbox" id="choix" name="choix" value="PSG" checked>PSG
+                        <input type="checkbox" id="choix" name="choix" value="RS">RS
+                        <input type="checkbox" id="choix" name="choix" value="PFC">PFC
+                    </p>
+                    
+                    <label for="civilite">Civilité</label>
+                    <p>
+                        <input type="radio" id="civilite" name="civilite" value="f">Madame
+                        <input type="radio" id="civilite" name="civilite" value="m">Monsieur
+                    </p>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="25"></textarea>
+                    
+                    <input type="submit" name="envoyer" value="Envoyer">
+                </form>
+            </section>
+        </main>
+        
+        <button><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
+        
+        <footer>
+            <p>Réalisation site en html-css</p>
+            <!-- Zone du bas. Ex : liens administratifs, ML, plan du site, CGU, CGV, contact, Copyright -->
+        </footer>
+    </body>
+    
+</html>
+
+
+
+
+
+

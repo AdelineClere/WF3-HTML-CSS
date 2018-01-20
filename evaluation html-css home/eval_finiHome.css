@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** FIN RESET ******/
+
+
+body{
+    background: #000 url(img/background.png);
+    background-size: 10%;
+}
+main{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    font-size: 170%;
+    font-weight: bold;
+    color: #C55394;
+    text-align: center;
+}
+h2{
+    font-family: 'Courgette', cursive;
+    font-size: 130%;
+    color: #EB43A3;
+}
+h3{
+    font-family: 'Courgette', cursive;
+    font-size: 110%;
+    color: #EB43A3;
+}
+p{
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+    color:#333;
+    line-height: 120%;
+}
+
+/****************** NAV *****************/
+
+nav{
+    background: #C55394;
+    display: flex;
+}
+#nomSite{
+    align-items: center;
+    justify-content: center;
+}
+#nomSite p{
+    font-family: 'Courgette', cursive;
+    font-size: 120%;
+    color: #FFF;
+    padding: 15px;
+}
+nav ul{
+    width: 100%;
+    flex-direction: row;
+    text-align: right;
+    align-items: center;
+    height: 60px;
+}  
+nav ul li{
+    display: inline-block;
+    justify-content: flex-end;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 23px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 80%;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+}
+nav ul li a:hover{
+    background :#EB43A3;
+}
+
+/************ HEADER *************/
+
+.arcEnCiel{
+    background: rgba(255,255,255,0) url(img/rainbow.png) no-repeat;
+    background-size: 500px;
+    background-position: center;
+    padding-top: 280px;
+    margin-bottom: -100px; */
+}
+.titreSite{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    margin-top: -160px; 
+}
+
+/************ FOOTER *************/
+
+footer{
+    background:#C55394;
+}
+footer p{
+    font-family: Arial, sans-serif;
+    text-align: right;
+    font-size: 70%;
+    padding: 20px;
+    color: #E577B5;
+    margin-top: 50px;
+}
+
+/*************** MAIN ************/
+
+main{
+    background:#FFF;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+/*************** section principe ************/
+
+.fa-star-o{
+    color: #EB43A3;
+    padding-right: 10px;
+}
+.principe h2{
+    margin-bottom: 20px;
+}
+/*************** section licornes ************/
+
+.lesLicornes{
+    margin: 50px 0 20px 0;
+}
+.portraitsLicornes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imgLicornes{
+    width: 90%;
+    transition: 2s;
+}
+.imgLicornes:hover{
+    transform:scale(2);
+}
+figure{
+    position: relative;
+}
+figure img{
+    display: block;
+}
+figcaption{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 0;
+    text-align: center;
+    width: 90%;
+    bottom: 0px;
+    color: #FFF;
+}
+figure p{
+    color: #FFF;
+    font-size: 12px;
+}
+/*************** section trouver ************/
+
+#trouver{
+    margin: 50px 0px 20px 0;
+}
+.nousTrouver{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.nousTrouver p{
+    font-size: 70%;
+}
+.map{
+    margin-top: 5px;
+}
+.contact{
+    width: 40%;
+    margin: 13px 0 0 20px;
+}
+.nousTrouver h3{
+    margin-bottom: 13px;
+}
+.newsletter{
+    margin-top: 25px;
+}
+#email{
+    margin-top: 10px;
+    padding: 5px;
+}
+.valider{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    color: #FFF;
+    background-color: #C55394;
+    border-radius: 5px;
+}
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+body {
+	width:100%;
+	margin: 0;
+	height: 100%;
+	padding:0;
+	background-image: url("evaluation_docs/img/background.png");
+}
+
+/* Voici le header */
+header {
+	width: 100%;
+	background: #C55394;
+	height: 50px;
+	line-height:50px;
+}
+ 
+ header h1 {
+ 	color:white;
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	margin-right: 0;
+ 	margin-left: 20px;
+ 	font-size:20px;
+ }
+
+.gauche {
+	float:left;
+	text-align:left;
+	width:50%;
+	height: 50px;
+}
+
+nav {
+	float:left;
+	width:50%;
+	text-align: right;
+	height: 50px;
+	overflow: hidden;
+	line-height: 45px;
+}
+
+nav a {
+	padding-left: 10px;
+	padding-right: 10px;
+	color:white;
+	font-family: "arial", sans-serif;
+	font-size:10px;
+	padding-top:25px;
+	padding-bottom: 25px;
+	margin:0;
+	text-decoration: none;
+
+
+}
+
+nav a:hover{
+	background: #EB43A3;
+}
+
+.actif {
+	background: #EB43A3;
+}
+
+/* Titre et arc-en-ciel*/
+.titre {
+	margin:0 auto;
+	height: 200px;
+	background-image: url("evaluation_docs/img/rainbow.png");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: 50% 300%;
+	width:960px;
+	text-align: center;
+	line-height: 300px;
+}
+
+.titre h1 {
+	margin: 0;
+	font-size:25px;
+}
+
+/*Section principale */
+main {
+	width:960px;
+	border-radius:10px;
+	box-shadow: 0 0 5px grey;
+	min-height: 1150px;
+	margin: 0 auto;
+	background: white;
+	padding-top: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 50px;
+}
+
+main h2 {
+	margin-top:0;
+}
+
+main p {
+	font-size:13px;
+	font-family: "arial", sans-serif;
+}
+
+.section2, .section3 {
+	padding-top : 50px;
+}
+
+.section2 figure {
+	float:left;
+	box-sizing: border-box;
+	width: 25%;
+	margin: 0;
+	padding-right:20px;
+	transition: 0.5s;
+}
+
+.section2 figure:hover {
+	transform: scale(1.1)
+}
+
+.section2 figure figcaption {
+	margin-top: -34px;
+	text-align: center;
+	background: #333;
+	opacity:0.8;
+	color:white;
+	font-family: "arial", sans-serif;
+	line-height: 10px;
+	height:30px;
+	
+	
+
+}
+
+.section2 figure figcaption p {
+	font-size:10px;
+	padding-top: 10px;
+	padding-right:10px;
+	line-height:10px;
+	margin:0;
+	padding-bottom: 6px;
+	vertical-align: 50%;
+}
+
+iframe{
+	float:left;
+}
+
+.textsection3{
+	float:left;
+	width:35%;
+	height:450px;
+	padding-left: 20px;
+}
+
+.textsection3 h3 {
+	font-size: 13px;
+}
+
+.textsection3 p {
+	font-size: 11px;
+}
+
+.submit{
+	background: #C55394;
+	margin-top:7px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: "courgette", cursive;
+	color:#C55394 ;
+}
+
+ h2, h3 {
+	font-family: "courgette", cursive;
+	color:#EB43A3 ;
+}
+/*Mon pied de page*/
+footer {
+	height:30px;
+	width:100%;
+	background: #C55394;
+	text-align: right;
+	color:white;
+	font-size:9px;
+	font-family: "arial", sans-serif;
+	line-height: 30px;
+	padding-right:10px;
+}
+
+footer p {
+	margin-right: 10px;
+}
+
+/*Ma classe Clear */
+.clear {
+	clear:both;
+}
+

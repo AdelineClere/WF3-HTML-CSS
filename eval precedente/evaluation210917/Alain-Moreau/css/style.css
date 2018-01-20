@@ -1,0 +1,279 @@
+/**************** RESET CSS ****************/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+
+
+
+/****************  STRUCTURE ****************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-family: Arial, sans-serif;
+	color:#000;
+	background: #FFF url(../img/background.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Courgette', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #EB43A3;
+}
+
+h1 {
+	color: #C55394;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 80px;
+	font-weight: bold;
+}
+
+
+h2{
+	font-size: 26px;
+	margin-bottom: 35px;
+}
+
+
+h2:before {
+	font-family: 'FontAwesome';
+	color: #EB43A3;
+	content: "\f006";
+	margin-right: 7px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+
+main {
+	margin-bottom: 40px;
+}
+
+
+header, footer {
+	background: #C55394;
+	color: #FFF;
+	min-height: 70px; 
+	line-height: 70px;
+}
+
+footer {
+	padding: 0 30px;
+	background: #E577B5;
+}
+
+
+/* LOGO */
+header p { 
+	float: left; 
+	display: inline-block;
+	font-family: 'Courgette', cursive;
+	line-height: 70px;
+	color: #FFF;
+	font-size: 28px; 
+	margin: 0 0 0 30px; 	
+}
+
+
+footer {
+	text-align: right;
+}
+
+
+nav {
+	float: right;
+}
+
+nav ul li {
+	float: left;
+	list-style: none;
+}
+
+
+nav li:hover, li.active {
+	background: #EB43A3;
+	transition: background .2s ease;	
+}
+
+
+nav li a {
+	padding: 0 20px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #FFF;
+}
+
+
+article {
+	margin-bottom: 80px;
+}
+
+article:last-child {
+	margin-bottom: 30px;
+}
+
+figure {
+	float: left;
+	width: 275px;
+	border:0;
+	margin-right:20px;
+	position: relative;
+	overflow: hidden;
+}
+
+figure.last{
+	margin-right:0;
+	float: right;
+}
+
+figure img {
+	width: 100%;
+	display: block;
+	transition: all 3s ease; 
+}
+
+figcaption {
+	background: rgba(0,0,0,0.75);
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: all 0.3s ease; 
+}
+
+figcaption a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+figcaption h3 {
+	font-family: inherit;
+}
+
+figure:hover figcaption {
+	bottom: 0;
+}
+
+figure:hover{
+	cursor: pointer;
+}
+
+figure:hover img {
+	transform: scale(1.3);
+}
+
+
+/* ZONING */
+
+.container {
+	width: 1220px;
+	margin: 0 auto;
+	padding:30px;
+}
+
+.heading {
+	height: 190px;
+}
+
+.heading .container {
+	padding: 0;
+}
+
+.clear {
+	clear:both;
+}
+
+
+/**************** CONTENU ****************/
+
+/** ARC EN CIEL + OMBRE **/
+
+.rainbow {
+	height: 190px;
+	background: transparent url(../img/rainbow.png) center 24px no-repeat;
+}
+
+.shadowradius {
+	background: #FFF; 
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(85,85,85,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(85,85,85,1);
+	box-shadow: 0px 0px 10px 0px rgba(85,85,85,1);
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+
+
+/* CONTACT */
+
+#trouver iframe, div.contacter {
+	float: left;
+}
+
+.contacter {
+	margin-left: 20px;
+}
+
+.contacter h4 {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.contacter p {
+	font-size: 15px;
+}
+
+
+input[type="email"] {
+	padding: 8px;
+	margin-bottom: 10px;
+	transition: box-shadow .2s ease;
+	border: 1px solid #CCC; 
+}
+
+input[type="email"]:focus {
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(250,85,176,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(250,85,176,1);
+	box-shadow: 0px 0px 20px 0px rgba(250,85,176,1);
+	border:1px solid #FFF;
+}
+
+
+input[type="submit"] {
+	padding: 10px 15px;
+	font-size: 16px;
+	color: #FFF;
+	background: #c45494;
+	border:1px solid #eb44a2;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	cursor: pointer;
+}

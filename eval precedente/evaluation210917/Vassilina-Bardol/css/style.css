@@ -1,0 +1,200 @@
+/*   Utilisation de normalyze.css dans un fichier séparé   */
+
+body {
+	background-image: url('../img/background.png');
+	font-family: Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.display-none {
+	display: none;
+}
+
+
+
+/* NAVIGATION  */
+
+#brand, h1, h2, h3 {
+	font-family: 'Courgette', cursive;
+}
+
+nav {
+	background-color: #C55394;
+	color: #fff;
+}
+
+#brand {
+	float: left;
+	font-size: 25px;
+	padding: 0;
+	margin: 18px 0 0 25px;
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	float: left;
+	padding: 25px;
+}
+
+nav ul li:hover {
+	background-color: #EB43A3;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+
+
+
+/*   HEADER  */
+
+h1 {
+	color: #C55394;
+	text-align: center;
+	background-image: url('../img/rainbow.png');
+	background-repeat: no-repeat;
+	width: 300px;
+	margin: 20px auto 0 auto;
+	padding: 90px 200px 50px 150px;
+}
+
+
+
+
+/*  MAIN  */
+
+.container {
+	width: 1150px;
+	margin: 0 auto 50px auto;
+	background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+	padding: 20px;
+}
+
+section {
+	margin: 50px 0 30px 0;
+}
+
+h2 {
+	color: #EB43A3;
+	font-weight: normal;
+}
+
+h3 {
+	color: #C55394;
+	font-size: 14px;
+}
+
+
+#principe p {
+	font-size: 13px; 
+}
+
+/*parent*/
+figure {
+	float: left;
+	margin: 10px;
+	width: 267px;
+	/*position "relative" pour son enfant en "absolute"*/
+	position: relative;
+	/*pour cacher ce que dépasse la figure*/
+	overflow: hidden;
+}
+
+/*enfant*/
+figcaption {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 7px 0;
+	margin: 0;
+	font-size: 14px;
+	width: 100%;
+	/*position "absolute" par rappor de son parent en "relative"*/
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+figure img {
+	width: 100%;
+	/*pour enlever petit espace blanc en bas de l'image*/
+	display: block;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+figure img:hover {
+	/*zoom*/
+	transform: scale(1.5);
+}
+
+#google-map,
+#contact {
+	float: left;
+	margin: 10px;
+}
+
+address {
+	font-style: normal;
+	font-size: 12px;
+	margin-bottom: 35px;
+}
+
+#newsletter p {
+	font-size: 12px;
+}
+
+
+/*  --formulaire--  */
+
+#email {
+	padding: 7px 10px;
+	width: 150px;
+	font-size: 14px;
+}
+
+#btn-valider {
+	color: #fff;
+	font-size: 14px;
+	padding: 7px 20px;
+	margin: 10px 0;
+	background-color: #C55394;
+	border: 1px solid #EB43A3;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+
+
+/*  FOOTER  */
+
+footer {
+	background-color: #E577B5;
+	color: #fff;
+	text-align: right;
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 12px;
+}

@@ -1,0 +1,99 @@
+body{
+	
+	font-family: Arial, sans-serif;
+	margin:0 auto;
+	background: url("../img/background.png") ;
+	
+}
+.propo{
+	margin-top:-20px;
+	height:90px;
+	width:100%;
+	background: #C55394;
+	
+}
+.left{
+	float:left;
+	color:white;
+	
+}
+
+nav  ul li { float:right; list-style: none; text-transform: uppercase; margin-top:30px;  }
+nav  ul ul {display:none; width:150px; }
+nav li a{
+	text-decoration: none; padding: 4px 0 4px; display:block; width:150px;color:white;}
+}
+nav ul li a:hover{
+	background: #EB43A3;
+	
+}
+
+main{
+	background: url("../img/rainbow.png") no-repeat ;
+	background-position:  50% 0 ;
+	
+	padding-top:100px;
+
+	
+}
+h1{
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	color: #C55394;
+}
+
+.conteneur{
+	height:1100px;
+	width:960px;
+	margin:0 auto 60px auto;
+	background:white;
+	border-radius:10px 10px 10px 10px;
+	box-shadow: 10px 10px 10px 5px #888888;
+
+}
+.picture1{}
+.picture2{}
+.picture3{
+	
+	width:100%;
+	
+}
+.carte1{
+	float:left;
+	margin-right:20px;
+
+	
+}
+.carte2{
+	float:left;
+	margin:10px;
+	
+	
+}
+h2{
+	color: #EB43A3;
+}
+.picture{
+	text-align:center;
+	padding-right:60px;
+	float:left;
+
+}
+h4{
+	font-family: 'Courgette', cursive;
+	color: #C55394;
+}
+.pink{
+	background-color:#C55394;
+	color:white;
+}
+footer{
+	height:50px;
+	background:#E577B5;
+	position:relative;
+	width:100%;
+}
+span{
+	float:right;
+	color:white;
+}

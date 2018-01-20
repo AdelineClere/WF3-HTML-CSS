@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+.mainMenu{
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 3px 5px #ececec;
+}
+.menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    max-height: 0;
+    overflow-y: hidden; /* va cacher le contenu (=les menus) qui depasse dans l'axe vertical car bloc fait 0px de ht */
+    text-align: center;
+    transition:2s;
+}
+.menu li{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    background: #fff;
+    }
+.menu li:hover{
+    background: #eee;
+    cursor:pointer;
+}
+.menu a{
+    color:#333;
+    text-decoration: none;
+    display: block;
+    width: 94%;
+    padding: 5px;
+}
+.menu a:hover{
+    color:#666;
+}
+label.menuTitle{
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    height: 40px;
+    margin-right: 1%;
+    width: 30px;
+    font-weight: bold;
+    background: url(img/menu.png) 97% 10px no-repeat;
+    background-size: 24px 19px;
+    float: right;
+}
+.hidden{    /* appliquée à l'input pour le cacher - (qd on le coche fait apparaitre le menu) */
+    display: none;
+}
+input[name="panel"]:checked ~ .menu{
+    /* lorsqu input qui a pr name panel est coché, alors son frère(= même indentation : ~) qui a la class menu prend ces attributs : */
+    max-height: 800px;
+    transition: 4s;
+}
+.clear{
+    clear:both;
+}
+
+.content{
+    width: 80%;
+    margin: 100px auto;
+}
+
+@media(min-width:970px){ /* min car mobile forst */
+    label.menuTitle{ /* pas d'esp. car c le label qui a pr class menuT et pas le menuT qui est dans label */
+        display: none;
+    }
+    .menu,.menu li{
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    .menu li,.menu a{
+        display: inline;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

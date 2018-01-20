@@ -1,0 +1,215 @@
+
+/****************** Réglages globaux ******************/
+
+*{
+    box-sizing: border-box; /* Pour faciliter le dimensionnement de mes blocs */
+    
+}
+
+body{
+    width: 100%;
+    height: 100%; /* Pour ne pas avoir de mauvaises surprises selon les navigateurs */
+    font-family: Arial, sans-serif;
+    background: url(../img/background.png);
+    /* position: absolute; */
+}
+
+/* Police spécifique pour les titres */
+h1, h2, h3{
+    font-family: 'Courgette', cursive;
+}
+
+h1{
+    color: #C55394;
+}
+
+/* Pour repérer les éléments flottants directement dans le html, je crée deux classes floatLeft et floatRight */
+.floatRight{
+    float: right;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Je crée un conteneur pour appliquer marges et dimensions à la partie centrale de ma page (à tout le contenu sauf header et footer */
+#conteneur{
+    width: 1240px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 1%;
+    
+}
+/******************Header  ****************/
+header{
+    background-color: #C55394;
+    height: 70px;
+    line-height: 70px;
+}
+
+header h1{
+    color: white;
+    font-size: 1.7em;
+}
+
+#logo{
+    margin-left: 40px;
+}
+
+header nav ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+header nav ul a{
+    color: white;
+    display: block; /* les balises a passées en bloc et avec des dimensions à 100%, la zone cliquable devient plus importante */
+    width: 100%; 
+    height: 100%;
+    padding: 0 20px;
+}
+
+header nav ul a:hover, .active{
+    background-color: #EB43A3;
+}
+
+/***************  Main  *********************/
+
+main{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+    bottom: 275px;
+    z-index: 2;
+    padding: 30px 30px 50px 30px;
+}
+
+main h2{
+    color: #EB43A3;
+    font-size: 1.6em;
+    margin: 30px 0;
+}
+
+main p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+#titre{
+    text-align: center;
+}
+
+#titre h1{
+    height: 150px;
+    line-height: 150px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: 270px;   
+}
+/* J'ai placé les élements main, #titre h1, et #titre img en position relative, et ajusté leurs positions pour gérer la position de l'arc en ciel */
+
+/************************ Section 2 Nos licornes - Images ********************* */
+#titre img{
+    position: relative;
+}
+
+figure img{
+    width: 100%;
+}
+
+figure img:hover{
+    transform: scale(1.05);
+}
+
+.main-2 figure{
+    width: 23%;
+    margin: 0 1%;
+}
+
+figcaption{
+    position: relative;
+    bottom: 40px;
+    height: 35px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+figcaption span{
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/***************************  Section 3*******************************/
+
+iframe{
+    width: 60%;
+    margin-right: 20px;
+}
+
+.main-3 h3{
+    color: #C55394;
+/*     font-weight: bold;
+ */    font-size: 1em;
+    margin: 10px 0;
+}
+
+.main-3 p{
+    font-size: 0.8em;
+}
+
+.contact{
+    padding-top: 7px;
+    margin-bottom: 30px;
+}
+
+.main-3 label{
+    font-size: 0.8em;
+}
+
+input#email{
+    width: 200px;
+    padding: 7px;
+    margin: 10px 0;
+}
+
+input#submit{
+    background-color: #C55394;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #E577B5;
+    width: 75px;
+    height: 33px;
+}
+
+/************************** Footer *************************/
+
+footer{
+    background-color: #E577B5;
+    height: 60px;
+    color: white;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 250px;
+    
+}
+
+footer span{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+}
+/* A cause du déplacement de certains blocs passés en position: relative, je me retrouve avec un background résiduel en bas de page qui m'empêche de coller le footer tout en bas... */

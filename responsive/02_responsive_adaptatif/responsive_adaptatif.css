@@ -1,0 +1,32 @@
+.zone_ada{ /*** mobile first ***/
+    background: orange;
+    color: white;
+    padding: 10px;
+}
+
+/*** on va decliner selon tailles ecrans ***/
+
+@media (min-width: 768px){ /*** si l'écran fait 768 px et + > appliquer les instructions suivantes ***/
+    .zone_ada{: 750px;
+        width: 750px;
+        background: red;
+    }
+}
+@media (min-width: 992px){
+    .zone_ada{
+        width: 950px;
+        background: green;
+    }
+    p{
+        display: none;
+    }
+}
+@media (min-width: 1200px){
+    .zone_ada{
+        width: 1170px;
+        background: blue;
+    }
+    p{
+        display: block;
+    }
+}
