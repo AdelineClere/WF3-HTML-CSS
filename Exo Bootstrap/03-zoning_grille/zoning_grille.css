@@ -28,7 +28,7 @@ body{
 }
 .bordureOrange{
     height: 40px;
-    border:2px solid orange;
+   /* border:2px solid orange; */
     background: rgba(250, 100, 0,0.2)
 }
 
@@ -48,7 +48,6 @@ body{
 
 
 .footer{
-    display: block;
     height: 70px;
     border: 2px solid green;
     margin: 10px 10px 20px 10px;
