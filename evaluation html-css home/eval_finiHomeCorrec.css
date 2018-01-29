@@ -1,11 +1,58 @@
-body{
-    background: #000 url(../../img/background.png);
-    background-size: 10%;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-main{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 20px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** FIN RESET ******/
+
+
+body{
+    background: #000 url(img/background.png);
+    background-size: 10%;
 }
 h1{
     font-size: 170%;
@@ -35,7 +82,6 @@ p{
 nav{
     background: #C55394;
     display: flex;
-    height: 60px;
 }
 #nomSite{
     align-items: center;
@@ -43,15 +89,16 @@ nav{
 }
 #nomSite p{
     font-family: 'Courgette', cursive;
-    font-size: 140%;
+    font-size: 120%;
     color: #FFF;
-    padding: 17px;
+    padding: 15px;
 }
 nav ul{
     width: 100%;
     flex-direction: row;
     text-align: right;
     align-items: center;
+    height: 60px;
 }  
 nav ul li{
     display: inline-block;
@@ -59,19 +106,17 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding: 24px;
+    padding: 23px;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 80%;
+    font-size: 70%;
     color: #FFF;
+    text-decoration: none;
     display: block;
     align-items: center;
 }
 nav ul li a:hover{
     background :#EB43A3;
-    text-decoration: none;
-    color: white;
-    height: 60px;
 }
 
 /************ HEADER *************/
@@ -81,7 +126,7 @@ nav ul li a:hover{
     background-size: 500px;
     background-position: center;
     padding-top: 280px;
-    margin-bottom: -100px; 
+    margin-bottom: -100px; */
 }
 .titreSite{
     text-align: center;
@@ -97,7 +142,7 @@ footer{
 footer p{
     font-family: Arial, sans-serif;
     text-align: right;
-    font-size: 70%;
+    font-size: 90%;
     padding: 20px;
     color: #E577B5;
     margin-top: 50px;
@@ -113,7 +158,6 @@ main{
     box-sizing: border-box;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
     border-radius: 10px;
-    height: 1075px;
 }
 
 /*************** section principe ************/
@@ -132,9 +176,12 @@ main{
 }
 .portraitsLicornes{
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .imgLicornes{
-    width: 100%;
+    width: 90%;
     transition: 2s;
 }
 .imgLicornes:hover{
@@ -143,12 +190,15 @@ main{
 figure{
     position: relative;
 }
+figure img{
+    display: block;
+}
 figcaption{
     position: absolute;
     background: rgba(0,0,0,0.7);
-    padding: 7px 0 0 0;
+    padding: 5px 0;
     text-align: center;
-    width: 100%;
+    width: 90%;
     bottom: 0px;
     color: #FFF;
 }
@@ -158,20 +208,21 @@ figure p{
 }
 /*************** section trouver ************/
 
-
 #trouver{
     margin: 50px 0px 20px 0;
 }
-.nousTrouver{
-    margin-bottom: 30px;
-}
 .nousTrouver p{
-    font-size: 100%;
+    font-size: 70%;
+}
+.float{
+    float: left;
 }
 .map{
     margin-top: 5px;
 }
 .contact{
+    width: 40%;
+    margin: 13px 0 0 20px;
 }
 .nousTrouver h3{
     margin-bottom: 13px;
@@ -184,12 +235,16 @@ figure p{
     padding: 5px;
 }
 .valider{
+    display: block;
     margin-top: 10px;
     padding: 5px 15px;
     color: #FFF;
     background-color: #C55394;
     border-radius: 5px;
 }
+
+
+
 
 
 
